@@ -1,0 +1,30 @@
+<%- include("Partials/Header") %>
+    <div class="notice">
+        <h1 id='h1'>Rules</h1>
+        <div id="rules">
+            <p>1) This game is only for desktop application</p>
+            <p>2) use UP/DOWN key for peddle movement</p>
+        </div>
+        <p>And Best Of Luck!<i class="fa fa-thumbs-o-up"></i></p>
+        <div class="timing">
+            Start In : <p id='timing'></p>
+            <a href="/game/<%= user %>.<%= userScore %>  "><button>Skip <i class="fa fa-forward"></i></button></a>
+        </div>
+    </div>
+    <script>
+        var i = 10;
+        var timer = document.getElementById('timing')
+        var interval = setInterval(function () {
+            timer.innerHTML = i;
+            i--;
+            if (i < 0) {
+                var heading = document.getElementById('h1')
+                window.location = "/game/<%= user %>.<%= userScore %>";
+                clearInterval(interval)
+            }
+        }, 1000)
+
+    </script>
+    </body>
+
+    </html>

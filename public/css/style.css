@@ -1,0 +1,223 @@
+/* css reset */
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    color: white;
+    text-align: center;
+    font-family: 'Press Start 2P', cursive;
+    /* min-height: 691px; */
+    background-color: black;
+    background: linear-gradient(45deg,rgba(0,0,0,1) 50%, rgba(255,0,0,1) 50%);
+    background-repeat: no-repeat;
+    /* height: 100vh; */
+    overflow: hidden;
+}
+
+.container{
+    /* width: 100%; */
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    height: 100vh;
+}
+
+/* user data css  */
+.col-1{
+    /* border: 2px solid red; */
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+}
+
+.col-1 img{
+    margin-top: 110px;
+    width: 150px;
+    border: 2px solid white;
+    border-radius: 50%;
+}
+
+.col-1 h3{
+    margin: 20px;
+    text-align: center;
+    font-size: 12px;
+}
+
+.col-1 h4{
+    margin: 10px;
+    text-align: center;
+    font-size: 10px;
+}
+
+.col-1 h4 span{
+    color: red;
+}
+
+button{
+    background-color: black;
+    border: 2px solid red;
+    color: white;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 13px;
+    margin-top: 15px;
+    padding: 10px 5px;
+    text-align: center;
+    /* width: 30%; */
+    border-radius: 10px;
+    outline: none;
+    cursor: pointer;
+    /* border: none; */
+}
+button:hover{
+    border :2px solid white;
+    background-color: red;
+    color: white;
+    /* border: none; */
+}
+
+/* canvas css  */
+.col-2{
+    /* border: 2px solid blue; */
+    width: 50%;
+    text-align: center;
+}
+
+.col-2 h3{
+    margin-top: 70px;
+    /* font-size: ; */
+}
+
+.col-2 canvas{
+    margin: 10px auto;
+    /* border: 2px solid white; */
+}
+
+/* table css  */
+.col-3{
+    /* border: 2px solid yellow; */
+    width: 30%;
+    text-align: center;
+    /* margin: 20px auto; */
+    /* : 20px auto; */
+}
+
+table, th, td {
+    border: 2px solid white;
+    border-collapse: collapse;
+}
+
+th{
+    font-weight: bold;
+}
+
+th, td {
+    font-size: 12px;
+    padding: 10px 15px;
+}
+
+.col-3 h3{
+    margin-top: 70px;
+}
+
+table{
+    width: 90%;
+    margin: 10px auto;
+}
+
+
+/*------------- Login and Signup page ------------  */
+
+.whole-body{
+    overflow: hidden;
+    height: 100vh;
+}
+
+/* heading  */
+.heading{
+    text-align: center;
+    margin-top: 70px;
+}
+
+/* login form  */
+.auth{
+    margin-top: 90px;
+    margin-bottom: 10px;
+}
+
+.id-input{
+    background-color: black; 
+    border: 2px solid white;
+    /* border-bottom:5px solid red; */
+    color: white;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 70%;
+    padding: 15px 32px;
+    text-align: center;
+    width: 25%;
+    margin-bottom: 10px;
+    outline: none; 
+}
+
+form button{
+    width: 10%;
+    /* overflow: hidden; */
+}
+
+.singup{
+    margin-top: 10px;
+    font-size: 10px;
+    /* font-weight: bold; */
+}
+
+/* ---------- notice page -------- */
+.notice{
+    height: 100vh;
+    overflow: hidden;
+}
+
+.notice h1{
+    margin: 30px auto;
+    font-size: 25px;
+    text-decoration: underline;
+}
+
+#rules p{
+    margin: 25px auto;
+}
+
+.notice p i{
+    font-size: 30px;
+}
+
+.notice a {
+    /* font-size: 18px; */
+    /* margin: auto; */
+}
+.notice a i{
+    font-size: 18px;
+}
+
+.timing{
+    display: flex;
+    /* flex-direction: row; */
+    justify-content:center;
+    align-items: center;
+    margin: 20px auto;
+}
+
+.timing button{
+    margin: auto 30px;
+    color: white;
+    background-color: black;
+    border: 2px solid white;
+}
+
+.timing button:hover{
+    border :2px solid white;
+    color: red;
+}  

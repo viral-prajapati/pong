@@ -1,0 +1,49 @@
+<%- include("Partials/Header") %>
+<div class="whole-body">
+  <div class="heading">
+      <h1>PongGame</h1>
+  </div>
+  <form action="" method="post">
+      <div class="auth">
+          <input type="text" name="name" id="name" class="id-input" placeholder="Enter your name" />
+          <br />
+          <input type="text" name="uid" id="uid" class="id-input" placeholder="Enter UserID" />
+          <br />
+          <input type="password" name="Psw1" id="pass-1" class="id-input" placeholder="PassWord" />
+          <br />
+          <input type="password" name="Psw2" id="pass-2" class="id-input" placeholder="Re-enter PassWord" />
+          <br />
+      </div>
+      <div class="button">
+          <button type='submit' onclick="handleOnClick()" id="start-btn">SignUp</button>
+      </div>
+      <div class="singup">
+          Have account? <span><a href="/">Login</a></span>
+      </div>
+
+  </form>
+</div>
+</body>
+  <script>
+      function handleOnClick(){
+        var pass1 = document.getElementById('pass-1').value
+        var pass2 = document.getElementById('pass-2').value
+        var name = document.getElementById('name').value
+        var uid = document.getElementById('uid').value
+
+        console.log(name);
+        if(pass1 != pass2 || pass1 == "") {
+          pass1="xf"
+            alert("Password are not same or empty")
+        }
+        if(name == ""){
+            alert("Name Feild is empty")
+        }
+        if(uid == ""){
+          alert("Uid Feild is empty")
+      }
+      }
+      
+  </script>
+
+</html>
